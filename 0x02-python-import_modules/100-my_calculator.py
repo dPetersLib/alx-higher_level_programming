@@ -8,7 +8,7 @@ if __name__ == "__main__":
             opr = str(sys.argv[2])
             b = int(sys.argv[3])
         except ValueError:
-            print("Unknown operator. Available operators: +, -, * and /")
+            print(f"Usage: {sys.argv[0]} <a> <operator> <b>")
             sys.exit(1)
         if opr == '+':
             print("{} + {} = {}".format(a, b, add(a, b)))
