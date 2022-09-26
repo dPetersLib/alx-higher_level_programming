@@ -27,4 +27,4 @@ if __name__ == "__main__":
             sys.exit(1)
     else:
         print(f"Usage: {sys.argv[0]} <a> <operator> <b>")
-        (sys.exit(1))
+        sys.exit(1)
