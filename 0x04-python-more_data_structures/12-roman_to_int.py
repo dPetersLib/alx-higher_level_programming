@@ -3,6 +3,8 @@ from functools import reduce
 
 
 def roman_to_int(roman_string):
+    if not roman_strint or type(roman_string) != str:
+        return 0
     roman_dict = {
         'I': 1,
         'V': 5,
