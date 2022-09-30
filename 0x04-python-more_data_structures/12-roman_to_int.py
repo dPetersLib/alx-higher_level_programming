@@ -15,8 +15,10 @@ def roman_to_int(roman_string):
     odd = ['IV', 'IX', 'XL', 'XC', 'CD', 'CM']
     vl = list(map(lambda x: roman_dict[x], list(roman_string)))
     if len(vl) > 1:
-        for i in range(len(vl)):
-            if i != len(vl) - 1:
-                if vl[i + 1] > vl[i]:
-                    vl[i], vl[i + 1] = vl[i + 1] - vl[i], 0
+        for h in range(len(vl)):
+            for i in range(len(vl)):
+                if i != len(vl) - 1:
+                    if vl[i + 1] > vl[i]:
+                        vl[i], vl[i + 1] = vl[i + 1] - vl[i], 0
+                        print(vl)
     return reduce(lambda x, y: x + y, vl)
