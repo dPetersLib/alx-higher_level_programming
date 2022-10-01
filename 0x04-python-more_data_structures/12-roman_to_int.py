@@ -14,7 +14,6 @@ def roman_to_int(roman_string):
         'D': 500,
         'M': 1000
     }
-    odd = ['IV', 'IX', 'XL', 'XC', 'CD', 'CM']
     vl = list(map(lambda x: roman_dict[x], list(roman_string)))
     if len(vl) > 1:
         for h in range(len(vl)):
