@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-import sys
 """OOP implementation of Square
 
 This module models a square. The square has been initialized with a size.
+Note that this documentation must come before anything else.
 """
+import sys
 
 
 class Square:
