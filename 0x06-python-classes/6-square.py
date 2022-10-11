@@ -1,17 +1,51 @@
 #!/usr/bin/python3
-import sys
+"""OOP implementation of Square
+
+This module models a square. The square has been initialized with a size,
+and a position attributes.
+"""
 
 
 class Square:
+    """A class that defines a square
+
+    The Square is initialised with a size and position with their default
+    being 0 and (0, 0) respectively.
+    It has an <area> method which calculates and returns
+    the area of the square.
+    It has a getter and setter methods to access and update
+    the size of the Square.
+    It has a <my_print> method to print out a
+    pattern according to the size.
+    It has a getter and setter methods to access and update
+    the position of the Square.
+
+    """
     def __init__(self, size=0, position=(0, 0)):
+        """This is our class constructor method.
+
+        This constructor method is call just once,
+        i.e. when an instance of this class is initiated.
+
+        Args:
+            size (int): This is the size of the Square instance.
+            position (tuple): This is the position of the Square instance.
+
+        """
         self.__size = size
         self.__position = position
 
     def area(self):
+        """This method calculates the Area of the Square
+
+        Return:
+            The square of the size; i.e size * size/
+        """
         return self.__size * self.__size
 
     @property
     def size(self):
+        """int: this is the size of the Square."""
         return self.__size
 
     @size.setter
@@ -23,6 +57,11 @@ class Square:
         self.__size = value
 
     def my_print(self):
+        """Prints a pattern according to the size
+
+        This method prints in stdout the square with the character (#)
+
+        """
         if self.size > 0:
             for i in range(self.size):
                 if self.position[0] > 0:
@@ -33,6 +72,7 @@ class Square:
 
     @property
     def position(self):
+        """tuple: this is the position of the Square."""
         return self.__position
 
     @position.setter
