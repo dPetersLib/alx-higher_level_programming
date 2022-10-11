@@ -4,7 +4,6 @@
 This module models a square. The square has been initialized with a size.
 Note that this documentation must come before anything else.
 """
-import sys
 
 
 class Square:
@@ -60,6 +59,6 @@ class Square:
         """
         if self.size > 0:
             for i in range(self.size):
-                print("#" * self.size, file=sys.stdout)
+                print("#" * self.size)
         else:
             print()
