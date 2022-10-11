@@ -9,7 +9,7 @@ class Square:
     """A class that defines a square
 
     The Square is initialised with a size (no type/value verification).
-    
+
     """
 
     def __init__(self, size):
@@ -20,6 +20,6 @@ class Square:
 
         Args:
             size (int): This is the size of the Square instance.
-        
+
         """
         self.__size = size  # private attribute
