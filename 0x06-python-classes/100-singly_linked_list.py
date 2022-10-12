@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+"""Singly Linked List
+
+This module implements a singly linked list.
+The nodes of this linkedlist is sorted in ascendin order
+according to their data.
+"""
+
 
 class Node:
     """Node for a singlylinkedlist
