@@ -56,12 +56,3 @@ class Square:
         The return type has to be a string.
         """
         return "{}".format(self.size)
-
-s_5 = Square(5)
-s_6 = Square(6)
-
-if s_5 < s_6:
-    print("Square 5 < Square 6")
-
-print(s_5)
-print(s_6)
