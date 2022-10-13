@@ -49,10 +49,99 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-    
-    def __str__(self):
-        """String representation of the class
-        
-        The return type has to be a string.
+
+    def __eq__(self, other):
+        """Equivalence check
+
+        It check for equivalence between two instances of the Sqaure.
+
+        Args:
+            other (Square): the second instance.
+
+        Return:
+            True if self.area and other.area are equivalent.
+            False if otherwise.
         """
-        return "{}".format(self.size)
+        if self.area() == other.area():
+            return True
+        return False
+
+    def __gt__(self, other):
+        """Greater Than check
+
+        It mimics the '>' sign between two instances of the Square.
+
+        Args:
+            other (Square): the second instance.
+
+        Return:
+            True if self.area is greater than other.area
+            False if otherwise.
+        """
+        if self.area() > other.area():
+            return True
+        return False
+
+    def __ge__(self, other):
+        """Greater Than or Equal to check
+
+        It mimics the '>=' sign between two instances of the Square.
+
+        Args:
+            other (Square): the second instance.
+
+        Return:
+            True if self.area is greater than or equal to other.area
+            False if otherwise.
+        """
+        if self.area() >= other.area():
+            return True
+        return False
+
+    def __lt__(self, other):
+        """Less Than check
+
+        It mimics the '<' sign between two instances of the Square.
+
+        Args:
+            other (Square): the second instance.
+
+        Return:
+            True if self.area is less than  other.area
+            False if otherwise.
+        """
+        if self.area() < other.area():
+            return True
+        return False
+
+    def __le__(self, other):
+        """Less Than check
+
+        It mimics the '<=' sign between two instances of the Square.
+
+        Args:
+            other (Square): the second instance.
+
+        Return:
+            True if self.area is less than or equal to other.area
+            False if otherwise.
+        """
+        if self.area() <= other.area():
+            return True
+        return False
+
+    def __ne__(self, other):
+        """Less Than check
+
+        It mimics the '!=' sign between two instances of the Square.
+
+        Args:
+            other (Square): the second instance.
+
+        Return:
+            True if self.area is not equal to other.area
+            False if otherwise.
+        """
+        if self.area() != other.area():
+            return True
+        return False
