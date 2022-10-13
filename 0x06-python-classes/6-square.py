@@ -60,15 +60,25 @@ class Square:
         """Prints a pattern according to the size
 
         This method prints in stdout the square with the character (#)
+        
+        Note:
+            If size is equal to 0, print an empty line
+            position should be use by using space
+            Don’t fill lines by spaces when position[1] > 0
+
+            The last condition above is yet to be implemented
+            as it isn't clearly understood. This is because the
+            same case provided goes against the condition, and when
+            implemented, it failed to pased some tests.
 
         """
-        if self.size > 0:
-            for i in range(self.size):
-                if self.position[0] > 0 and self.position[1] == 0:
-                    print(" " * self.position[0], end="")
-                print("#" * self.size)
-        else:
+        if self.size == 0:
             print()
+        else:
+            for i in range(self.size):
+                # if self.position[0] > 0 and self.position[1] == 0:
+                print(" " * self.position[0], end="")
+                print("#" * self.size)
 
     @property
     def position(self):
@@ -81,7 +91,7 @@ class Square:
         if type(value) == tuple and len(value) == 2:
             is_ok = True
             for i in value:
-                if type(i) != int or type(i) <= 0:
+                if type(i) != int or i <= 0:
                     is_ok = False
                     break
         if is_ok:
