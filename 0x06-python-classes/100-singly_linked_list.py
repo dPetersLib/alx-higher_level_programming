@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Singly Linked List
+"""Singly Linked List.
 
 This module implements a singly linked list.
 The nodes of this linkedlist is sorted in ascendin order
@@ -8,7 +8,7 @@ according to their data.
 
 
 class Node:
-    """Node for a singlylinkedlist
+    """Node for a singlylinkedlist.
 
     This class defines a node of a singly linked list.
     As with every singlylinkedlist's node, it has two components:
@@ -17,9 +17,9 @@ class Node:
     """
 
     def __init__(self, data, next_node=None):
-        """This is the constructor method for the Node.
+        """Initializing method for the Node.
 
-        This constructor method is call just once,
+        it is call just once,
         i.e. when an instance of this class is initiated.
 
         Args:
@@ -32,12 +32,12 @@ class Node:
 
     @property
     def data(self):
-        """This returns the data of the node"""
+        """Data of the node."""
         return self.__data
 
     @property
     def next_node(self):
-        """This returns the pointer to the next_node"""
+        """Pointer to the next_node."""
         return self.__next_node
 
     @data.setter
@@ -56,7 +56,7 @@ class Node:
 
 
 class SinglyLinkedList:
-    """A SinglyLinkedList definition
+    """A SinglyLinkedList definition.
 
     This is a class that defines a singly linked list.
     The List has Nodes and the nodes are sorted and printed in
@@ -65,7 +65,7 @@ class SinglyLinkedList:
     """
 
     def __init__(self):
-        """This is the constructor method for the SinglyLinkedList.
+        """constructor method for the SinglyLinkedList.
 
         This constructor method is call just once,
         i.e. when an instance of this class is initiated.
@@ -74,7 +74,7 @@ class SinglyLinkedList:
         self.__head = None
 
     def sorted_insert(self, value):
-        """Sort the List and insert the node
+        """Sort the List and insert the node.
 
         This method inserts a new Node into the correct sorted position
         in the list (increasing order).
