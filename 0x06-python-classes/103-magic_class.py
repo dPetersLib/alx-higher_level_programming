@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Magic Class Module
-This module contains our magic class"""
+"""Magic Class Module - This module contains our magic class"""
+import math
 
 
 class MagicClass:
