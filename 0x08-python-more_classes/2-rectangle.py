@@ -6,9 +6,6 @@ Based on the first `2-rectangle`.
 """
 
 
-from turtle import width
-
-
 class Rectangle:
     """Real Rectangle.
 
