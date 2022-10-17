@@ -78,7 +78,8 @@ class Rectangle:
 
         This prints # according to the perimeter of the rectangle.
         """
-        for i in range(self.height - 1):
-            print("#" * self.width)
-        print("#" * self.width, end="")
+        if self.perimeter() > 0:
+            for i in range(self.height - 1):
+                print("#" * self.width)
+            print("#" * self.width, end="")
         return ""
