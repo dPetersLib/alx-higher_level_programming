@@ -10,6 +10,7 @@ Based on the first `0-rectangle`
 
 class Rectangle:
     """Real Rectangle
+
     Defines a real rectangle
     """
     def __init__(self, width=0, height=0):
@@ -27,10 +28,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """Width property of a Rectangle
-        Return:
-            private instant attribute `width`
-        """
+        """Width property of a Rectangle"""
         return self.__width
 
     @width.setter
@@ -43,10 +41,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Height property of a Rectangle
-        Return:
-            private instant attribute `height`
-        """
+        """Height property of a Rectangle"""
         return self.__height
 
     @height.setter
