@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """1-rectangle module.
 
-Based on the first `0-rectangle`.
+Based on the first 0-rectangle.
 
 """
 
