@@ -14,6 +14,10 @@ class Rectangle:
     """
     def __init__(self, width=0, height=0):
         """Instantiation method
+
+        This constructor method is call just once,
+        i.e. when an instance of this class is initiated.
+
         Args:
             width (int): width of the rectangle instance
             height (int): height of the rectangle
@@ -51,4 +55,4 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-        self.__width = value
+        self.__height = value
