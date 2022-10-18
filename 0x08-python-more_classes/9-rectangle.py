@@ -145,8 +145,8 @@ class Rectangle:
         Return:
             It returns a square.
         """
-        if type(size) != int:
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size cannot be less than zero")
+        # if type(size) != int:
+        #     raise TypeError("size must be an integer")
+        # if size < 0:
+        #     raise ValueError("size cannot be less than zero")
         return cls(size, size)
