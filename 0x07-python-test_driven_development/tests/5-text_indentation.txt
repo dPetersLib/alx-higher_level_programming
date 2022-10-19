@@ -1,0 +1,16 @@
+The ``5-text_indentation`` module
+=================================
+
+Using ``text_indentation``
+--------------------------
+
+First we import the function
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+main tests
+
+    >>> text_indentation("Do you mean here? ok then.")
+    Do you mean here?
+    <BLANKLINE>
+    ok then.
+    <BLANKLINE>
