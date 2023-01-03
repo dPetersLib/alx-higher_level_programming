@@ -102,6 +102,6 @@ class Square:
         else:
             raise TypeError("position must be a tuple of 2 positive integers")
     
-    def __str__(self):
-        self.my_print()
-        return ""
+    def __call__(self):
+        """Handles what happens when an instance is called like a function"""
+        return self.my_print()
