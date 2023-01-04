@@ -87,10 +87,15 @@ class Rectangle(Base):
 
     def display(self):
         """Prints in stdout the Rectangle instance with the
-        character #
+        character # by taking care of x and y.
         """
-        for i in range(self.__height):
-            print("#" * self.__width)
+        for i in range(self.y):
+            # This takes care of the y axis
+            print()
+        for i in range(self.height):
+            # the first bracketed arg of the print()
+            # takes care of the x axis
+            print((" " * self.x) + ("#" * self.width))
 
     def __str__(self):
         """Overrides the default method"""
