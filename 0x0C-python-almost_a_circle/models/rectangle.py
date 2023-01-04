@@ -102,17 +102,30 @@ class Rectangle(Base):
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} \
 - {self.width}/{self.height}"
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """A public method to update the properties of  the rectance instance
 
         Args:
-            argss : properties to update.
+            args : properties to update.
         """
-        try:
-            self.id = args[0]
-            self.width = args[1]
-            self.height = args[2]
-            self.x = args[3]
-            self.y = args[4]
-        except IndexError:
-            pass
+        if len(args) > 0:
+            try:
+                self.id = args[0]
+                self.width = args[1]
+                self.height = args[2]
+                self.x = args[3]
+                self.y = args[4]
+            except IndexError:
+                pass
+        else:
+            if kwargs is not None:
+                if 'id' in kwargs:
+                    self.id = kwargs['id']
+                if 'width' in kwargs:
+                    self.width = kwargs['width']
+                if 'height' in kwargs:
+                    self.height = kwargs['height']
+                if 'x' in kwargs:
+                    self.x = kwargs['x']
+                if 'y' in kwargs:
+                    self.y = kwargs['y']
