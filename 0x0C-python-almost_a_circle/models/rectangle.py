@@ -91,3 +91,8 @@ class Rectangle(Base):
         """
         for i in range(self.__height):
             print("#" * self.__width)
+
+    def __str__(self):
+        """Overrides the default method"""
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} \
+- {self.width}/{self.height}"
